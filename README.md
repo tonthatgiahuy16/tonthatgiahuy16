@@ -23,7 +23,7 @@ An in-progress FastAPI and RAG prototype that turns uploaded PDFs into traceable
 - Built an explicit **Extract → Transform → Chunk → Embed → Index** ingestion workflow.
 - Preserved document, page, source, and chunk metadata through ingestion and retrieval.
 - Used Chroma as a rebuildable vector index and created PostgreSQL/Alembic groundwork for document lifecycle records.
-- Currently replacing manual validation scripts with pytest tests and completing PostgreSQL service integration.
+- Added isolated pytest coverage for ingestion, retrieval orchestration, schemas, and upload validation, with GitHub Actions running the suite on every push.
 
 **Technologies:** Python, FastAPI, PostgreSQL, Alembic, Chroma, RAG
 
@@ -49,7 +49,7 @@ A coursework prototype for batch processing and simulated streaming in a local D
 
 ## Current focus
 
-- Adding repeatable pytest tests to CloudMentor AI.
+- Expanding CloudMentor integration tests across PostgreSQL, Chroma, embedding, and LLM boundaries.
 - Completing PostgreSQL document-lifecycle integration.
 - Improving backend reliability and reproducible local data workflows.
 
