@@ -1,77 +1,58 @@
 <h1 align="center">Hi, I'm Tôn Thất Gia Huy</h1>
 
 <p align="center">
-  Final-year Data Science student building backend APIs, data pipelines, and practical AI applications.
+  Final-year Data Science student focused on Backend and Data Engineering.
 </p>
 
 <p align="center">
-  <a href="https://tonthatgiahuy16.github.io">Portfolio</a>
-  &nbsp;•&nbsp;
-  <a href="https://www.linkedin.com/in/t%C3%B4n-th%E1%BA%A5t-gia-huy-708860369/">LinkedIn</a>
-  &nbsp;•&nbsp;
+  I build Python APIs and data pipelines, with an emphasis on traceable data flows, measurable results, and honest documentation.
+</p>
+
+<p align="center">
+  <a href="https://tonthatgiahuy16.github.io">Portfolio</a> •
+  <a href="https://www.linkedin.com/in/ton-that-gia-huy/">LinkedIn</a> •
   <a href="mailto:tonthatgiahuy160505@gmail.com">Email</a>
 </p>
 
-## About me
-
-- Data Science student at UTH - University of Transport Ho Chi Minh City, expected to graduate in 2027.
-- Interested in backend engineering, data engineering, retrieval-augmented generation, and reliable AI applications.
-- I use Python, SQL, FastAPI, Spark, Kafka, Airflow, Docker, and Git through coursework and personal projects.
-- Currently developing CloudMentor AI and improving its retrieval quality, metadata traceability, and PostgreSQL foundation.
-- Based in Ho Chi Minh City and open to Data, AI, and Backend internship opportunities.
-
-## Featured projects
+## Selected projects
 
 ### [CloudMentor AI](https://github.com/tonthatgiahuy16/CloudMentor-AI)
 
-An in-progress RAG API prototype for turning uploaded PDFs into traceable, source-grounded answers.
+An in-progress FastAPI and RAG prototype that turns uploaded PDFs into traceable, source-grounded answers.
 
-- Implements a modular **Extract -> Transform -> Chunk -> Embed -> Index** ingestion workflow.
-- Stores embeddings in Chroma with document, chunk, page, and source metadata.
-- Includes input validation, PostgreSQL/Alembic groundwork, and manual validation scripts.
+- Built an explicit **Extract → Transform → Chunk → Embed → Index** ingestion workflow.
+- Preserved document, page, source, and chunk metadata through ingestion and retrieval.
+- Used Chroma as a rebuildable vector index and created PostgreSQL/Alembic groundwork for document lifecycle records.
+- Currently replacing manual validation scripts with pytest tests and completing PostgreSQL service integration.
 
-`Python` `FastAPI` `Chroma` `RAG` `PostgreSQL` `Alembic`
+**Technologies:** Python, FastAPI, PostgreSQL, Alembic, Chroma, RAG
 
 ### [Social Media Sentiment Big Data Pipeline](https://github.com/tonthatgiahuy16/social-media-sentiment-bigdata-pipeline)
 
-A coursework project exploring batch and streaming data processing for 1.6 million tweets in a multi-service Docker Compose environment.
+A coursework prototype for batch processing and simulated streaming in a local Docker Compose environment.
 
-- Uses Spark, Kafka, HDFS, Airflow, and FastAPI across the project workflow.
-- Reduces storage from 238 MB to 79 MB with partitioned Parquet.
-- Includes a benchmark reporting throughput from 222 to 1,176 records per second in the tested environment.
+- Processed the Sentiment140 dataset of approximately **1.6 million tweets** with HDFS and PySpark.
+- Created cleaning, feature-engineering, model-training, and Parquet storage stages.
+- Recorded a storage reduction from **238 MB to 79 MB** and a local throughput benchmark from **222 to 1,176 records/second** in the coursework environment.
+- Implemented a separate Kafka and Spark Structured Streaming demonstration using synthetic messages.
 
-`Python` `PySpark` `Kafka` `Airflow` `HDFS` `Docker` `FastAPI`
+**Technologies:** Python, PySpark, HDFS, Kafka, MongoDB, FastAPI, Docker
 
-### [Employee Attrition Prediction](https://github.com/tonthatgiahuy16/Employee-Attrition-Prediction)
-
-A coursework notebook that explores employee attrition using 4,653 records.
-
-- Covers data cleaning, exploratory analysis, feature preparation, and SMOTE.
-- Compares Logistic Regression, Decision Tree, and Random Forest classifiers.
-- Evaluates the models on a stratified 80/20 train-test split.
-
-`Python` `Pandas` `Scikit-learn` `SMOTE` `Jupyter Notebook`
-
-## Technical skills
+## Technical focus
 
 | Area | Technologies |
 | --- | --- |
-| Programming | Python, SQL, C#, R |
-| Backend | FastAPI, REST APIs, input validation |
-| Data Engineering | PySpark, Kafka, Airflow, HDFS, Parquet, ETL |
-| AI and Machine Learning | RAG, Chroma, embeddings, Scikit-learn, SMOTE |
-| Databases and Tools | PostgreSQL, SQL Server, MongoDB, Docker, Git |
+| Core | Python, SQL, Git |
+| Backend and databases | FastAPI, REST APIs, PostgreSQL, Alembic |
+| Data processing | PySpark, Parquet, Docker |
+| Project exposure | Kafka, Airflow, HDFS, MongoDB, Chroma |
 
 ## Current focus
 
-- Turning manual validation scripts into repeatable automated tests.
-- Improving CloudMentor AI's retrieval quality and reproducible local setup.
-- Learning more about backend reliability, distributed processing, and AI-agent evaluation.
+- Adding repeatable pytest tests to CloudMentor AI.
+- Completing PostgreSQL document-lifecycle integration.
+- Improving backend reliability and reproducible local data workflows.
 
-## Contact
+## Availability
 
-- Portfolio: [tonthatgiahuy16.github.io](https://tonthatgiahuy16.github.io)
-- LinkedIn: [Tôn Thất Gia Huy](https://www.linkedin.com/in/t%C3%B4n-th%E1%BA%A5t-gia-huy-708860369/)
-- Email: [tonthatgiahuy160505@gmail.com](mailto:tonthatgiahuy160505@gmail.com)
-- Location: Ho Chi Minh City, Vietnam
-
+Based in Ho Chi Minh City and open to **Backend and Data Engineering Intern/Fresher opportunities**.
