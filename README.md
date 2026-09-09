@@ -1,58 +1,21 @@
-<h1 align="center">Hi, I'm Tôn Thất Gia Huy</h1>
+# Hi, I'm Tôn Thất Gia Huy
 
-<p align="center">
-  Final-year Data Science student focused on Backend and Data Engineering.
-</p>
+Final-year Data Science student in Ho Chi Minh City, focused on Backend and Data Engineering. I build Python APIs and data pipelines with traceable data flows, automated testing, and clear documentation.
 
-<p align="center">
-  I build Python APIs and data pipelines, with an emphasis on traceable data flows, measurable results, and honest documentation.
-</p>
+[Portfolio](https://tonthatgiahuy16.github.io/) · [LinkedIn](https://www.linkedin.com/in/ton-that-gia-huy/) · [Email](mailto:tonthatgiahuy160505@gmail.com)
 
-<p align="center">
-  <a href="https://tonthatgiahuy16.github.io">Portfolio</a> •
-  <a href="https://www.linkedin.com/in/ton-that-gia-huy/">LinkedIn</a> •
-  <a href="mailto:tonthatgiahuy160505@gmail.com">Email</a>
-</p>
-
-## Selected projects
+## Featured projects
 
 ### [CloudMentor AI](https://github.com/tonthatgiahuy16/CloudMentor-AI)
 
-An in-progress FastAPI and RAG prototype that turns uploaded PDFs into traceable, source-grounded answers.
+An in-progress FastAPI and RAG prototype for PDF ingestion and traceable retrieval. The repository includes metadata propagation, input validation, Chroma indexing, PostgreSQL/Alembic foundations, pytest coverage, and GitHub Actions CI.
 
-- Built an explicit **Extract → Transform → Chunk → Embed → Index** ingestion workflow.
-- Preserved document, page, source, and chunk metadata through ingestion and retrieval.
-- Used Chroma as a rebuildable vector index and created PostgreSQL/Alembic groundwork for document lifecycle records.
-- Added isolated pytest coverage for ingestion, retrieval orchestration, schemas, and upload validation, with GitHub Actions running the suite on every push.
+### [Social Media Sentiment Pipeline](https://github.com/tonthatgiahuy16/social-media-sentiment-bigdata-pipeline)
 
-**Technologies:** Python, FastAPI, PostgreSQL, Alembic, Chroma, RAG
+A coursework prototype processing approximately 1.6 million tweets with PySpark and HDFS. It demonstrates batch ETL, feature engineering, model comparison, Parquet storage, and a separate simulated Kafka streaming flow.
 
-### [Social Media Sentiment Big Data Pipeline](https://github.com/tonthatgiahuy16/social-media-sentiment-bigdata-pipeline)
+## Core stack
 
-A coursework prototype for batch processing and simulated streaming in a local Docker Compose environment.
+Python · SQL · FastAPI · PostgreSQL · PySpark · Docker · Git
 
-- Processed the Sentiment140 dataset of approximately **1.6 million tweets** with HDFS and PySpark.
-- Created cleaning, feature-engineering, model-training, and Parquet storage stages.
-- Recorded a storage reduction from **238 MB to 79 MB** and a local throughput benchmark from **222 to 1,176 records/second** in the coursework environment.
-- Implemented a separate Kafka and Spark Structured Streaming demonstration using synthetic messages.
-
-**Technologies:** Python, PySpark, HDFS, Kafka, MongoDB, FastAPI, Docker
-
-## Technical focus
-
-| Area | Technologies |
-| --- | --- |
-| Core | Python, SQL, Git |
-| Backend and databases | FastAPI, REST APIs, PostgreSQL, Alembic |
-| Data processing | PySpark, Parquet, Docker |
-| Project exposure | Kafka, Airflow, HDFS, MongoDB, Chroma |
-
-## Current focus
-
-- Expanding CloudMentor integration tests across PostgreSQL, Chroma, embedding, and LLM boundaries.
-- Completing PostgreSQL document-lifecycle integration.
-- Improving backend reliability and reproducible local data workflows.
-
-## Availability
-
-Based in Ho Chi Minh City and open to **Backend and Data Engineering Intern/Fresher opportunities**.
+Open to Backend and Data Engineering Intern/Fresher opportunities in Ho Chi Minh City.
