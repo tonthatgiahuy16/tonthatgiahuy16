@@ -1,6 +1,6 @@
 # Hi, I'm Tôn Thất Gia Huy
 
-Data Engineering and Backend candidate in Ho Chi Minh City. I build data pipelines and APIs around traceable lineage, explicit ownership, recoverable lifecycle workflows, and testable failure handling.
+Data Engineering-focused developer in Ho Chi Minh City. I build data pipelines and data-backed applications with an emphasis on lineage, data quality, recoverability, and evidence-backed claims.
 
 > **Let's build a data path that survives the unhappy path.**
 
@@ -10,33 +10,36 @@ Data Engineering and Backend candidate in Ho Chi Minh City. I build data pipelin
 
 ### [CloudMentor AI](https://github.com/tonthatgiahuy16/CloudMentor-AI)
 
-A recoverable document-data platform for subject-scoped RAG, built with FastAPI, React, PostgreSQL, Chroma, and MinIO.
+A recoverable, subject-scoped document-data lifecycle for RAG.
 
-- **Data foundation:** PostgreSQL owns document metadata and lifecycle state; canonical PDF, TXT, and DOCX sources are retained through local or MinIO storage; Chroma is a rebuildable derived index.
-- **Reliability:** checksum validation, retry and recovery workflows, database-enforced concurrent duplicate protection, and dry-run-first PostgreSQL–Chroma reconciliation with bounded repair.
-- **Verification:** GitHub Actions cover backend tests, frontend lint/build, container-backed MinIO recovery, and PostgreSQL concurrent ingestion.
+- Ingests PDF, UTF-8 TXT, and DOCX with source metadata and location-aware citations.
+- PostgreSQL owns document and lifecycle state; canonical sources use local storage or MinIO; Chroma is a rebuildable derived index.
+- Includes duplicate-safe ingestion, retry and restore flows, reconciliation, and controlled local-to-MinIO migration.
+
+### [RetailPulse](https://github.com/tonthatgiahuy16/RETAILPULSE)
+
+A reproducible batch data engineering and analytics project using the UCI Online Retail II dataset.
+
+- Tracks an immutable source snapshot through PostgreSQL raw, staging, warehouse, and mart layers.
+- Adds lineage, reconciliation and data-quality gates, dbt contracts, and a read-only BI semantic layer.
+- Includes a Power BI Project report. Its pages were verified locally in Power BI Desktop; no hosted report or scheduled refresh is claimed.
 
 ### [OpsBrain](https://github.com/tonthatgiahuy16/OpsBrain)
 
-An evidence-first knowledge infrastructure prototype for investigating IT incidents, developed through small, tested vertical slices.
+An evidence-first knowledge infrastructure prototype for investigating IT operations incidents.
 
-- **Implemented baseline:** FastAPI, PostgreSQL with pgvector, versioned Markdown ingestion, frontmatter validation, canonical hashing, immutable version history, and ingestion-job constraints.
-- **Data design:** PostgreSQL is the system of record; future chunks, embeddings, search indexes, and relationships are treated as rebuildable derived data.
-- **Current boundary:** retrieval, ACL enforcement, Ollama generation, citations, and Obsidian integration remain target architecture until matching implementation and runtime evidence exist.
-
-### [Social Media Sentiment Pipeline](https://github.com/tonthatgiahuy16/social-media-sentiment-bigdata-pipeline)
-
-A coursework batch pipeline processing approximately 1.6 million Sentiment140 records with HDFS, PySpark, partitioned Parquet, Spark ML, and FastAPI with MongoDB. It also includes a separate Kafka streaming demonstration with synthetic messages and an Airflow scheduling prototype.
+- Current implementation includes validated Markdown ingestion, canonical hashing, immutable PostgreSQL document versions, audit-event storage, deterministic chunk builds, and approval-driven reindex jobs with retries and lease fencing.
+- Retrieval, complete ACL enforcement, Ollama generation, citations, and Obsidian integration remain target architecture, not implemented capabilities.
 
 ## Engineering focus
 
-- Make the system of record and derived data boundary explicit.
-- Preserve identifiers and source metadata across ingestion and retrieval.
-- Design retries, reconciliation, and recovery before calling a pipeline reliable.
-- Separate implemented behavior, recorded evidence, and target architecture.
+- Keep the system of record and derived data boundary explicit.
+- Preserve identifiers and source lineage across pipeline stages.
+- Design duplicate handling, retry, reconciliation, and recovery.
+- Separate implementation, recorded evidence, and target architecture.
 
 ## Core stack
 
-Python · SQL · PostgreSQL · FastAPI · PySpark · Docker · MinIO · Git
+Python · SQL · PostgreSQL · dbt · PySpark · FastAPI · Docker · MinIO · Power BI · Git
 
 Open to Data Engineering, Data Platform, and data-intensive Backend internship or entry-level opportunities in Ho Chi Minh City.
