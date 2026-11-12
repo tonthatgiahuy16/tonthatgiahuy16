@@ -1,6 +1,6 @@
 # Hi, I'm Tôn Thất Gia Huy
 
-Data Engineering-focused developer in Ho Chi Minh City. I build data pipelines and data-backed applications with an emphasis on lineage, data quality, recoverability, and evidence-backed claims.
+Data Engineering-focused developer in Ho Chi Minh City. I work on data pipelines and data-backed systems with an emphasis on lineage, data quality, recoverability, and evidence-backed claims.
 
 > **Let's build a data path that survives the unhappy path.**
 
@@ -8,28 +8,29 @@ Data Engineering-focused developer in Ho Chi Minh City. I build data pipelines a
 
 ## Featured projects
 
-### [CloudMentor AI](https://github.com/tonthatgiahuy16/CloudMentor-AI)
-
-A recoverable, subject-scoped document-data lifecycle for RAG.
-
-- Ingests PDF, UTF-8 TXT, and DOCX with source metadata and location-aware citations.
-- PostgreSQL owns document and lifecycle state; canonical sources use local storage or MinIO; Chroma is a rebuildable derived index.
-- Includes duplicate-safe ingestion, retry and restore flows, reconciliation, and controlled local-to-MinIO migration.
-
 ### [RetailPulse](https://github.com/tonthatgiahuy16/RETAILPULSE)
 
-A reproducible batch data engineering and analytics project using the UCI Online Retail II dataset.
+A data engineering and decision-analytics project using the UCI Online Retail II dataset.
 
-- Tracks an immutable source snapshot through PostgreSQL raw, staging, warehouse, and mart layers.
-- Adds lineage, reconciliation and data-quality gates, dbt contracts, and a read-only BI semantic layer.
-- Includes a Power BI Project report. Its pages were verified locally in Power BI Desktop; no hosted report or scheduled refresh is claimed.
+- PostgreSQL pipeline with raw, staging, warehouse, and mart layers, plus a migration ledger, reconciliation gates, dbt contracts, and read-only BI semantic views.
+- In-repository DAG runner for task dependencies, bounded retry/backoff, downstream skipping, JSON run history, and an optional failure webhook.
+- Local Power BI Project (PBIP) source for semantic-model validation and temporal model backtesting, including a historical model-evaluation page.
+
+### [CloudMentor AI](https://github.com/tonthatgiahuy16/CloudMentor-AI)
+
+A personal document-data lifecycle project for evidence-grounded retrieval.
+
+- **Multi-format ingestion pipeline** for PDF, UTF-8 TXT, and DOCX, preserving page-, line-, and paragraph-level source metadata.
+- **PostgreSQL document registry and lifecycle**, with local or MinIO canonical-source storage and a rebuildable Chroma derived index.
+- **Recovery and consistency controls** for duplicate protection, stale-ingestion recovery, bounded reconciliation repair, and controlled local-to-MinIO migration.
 
 ### [OpsBrain](https://github.com/tonthatgiahuy16/OpsBrain)
 
-An evidence-first knowledge infrastructure prototype for investigating IT operations incidents.
+An evidence-first knowledge infrastructure prototype for IT operations knowledge.
 
-- Current implementation includes validated Markdown ingestion, canonical hashing, immutable PostgreSQL document versions, audit-event storage, deterministic chunk builds, and approval-driven reindex jobs with retries and lease fencing.
-- Retrieval, complete ACL enforcement, Ollama generation, citations, and Obsidian integration remain target architecture, not implemented capabilities.
+- Verified baseline: Markdown frontmatter validation, canonical content hashing, immutable PostgreSQL document versions, lifecycle audit storage, and approval-driven reindex jobs.
+- Chunk-only reindex worker with bounded delayed retry, persisted lease fencing, and expired-lease reclaim.
+- Out of current scope: retrieval, complete ACL enforcement, citations, Obsidian integration, and deployment.
 
 ## Engineering focus
 
@@ -40,6 +41,6 @@ An evidence-first knowledge infrastructure prototype for investigating IT operat
 
 ## Core stack
 
-Python · SQL · PostgreSQL · dbt · PySpark · FastAPI · Docker · MinIO · Power BI · Git
+Python · SQL · PostgreSQL · dbt · FastAPI · Docker · MinIO · Power BI · Git
 
 Open to Data Engineering, Data Platform, and data-intensive Backend internship or entry-level opportunities in Ho Chi Minh City.
